@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="weather.css">
+</head>
+<body onload="getData()">
+    <div class="box">
+        <input id="search" class="search" type="text" value="Ranchi" onchange="getData()">
+        <div>
+            <h1 id="temp"><sup>o</sup></h1>
+            <p style="font-size: 20px; text-align: center; color: yellow;">Degree Celcius</p>
+            
+            <p class="data">Wind Speed :- <span id="ws">2.25</span></p>
+            <p class="data">Humidity :- <span id="hmdty">95</span></p>
+        </div>
+        <div style="display: flex; justify-content: center;">
+            <img width="400px" src="weather.png" alt="">
+        </div>
+    </div>
+    <script src="weather.js"></script>
+</body>
+</html>
